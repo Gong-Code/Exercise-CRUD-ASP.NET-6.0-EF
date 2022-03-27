@@ -36,7 +36,7 @@ namespace SuperHeroApi.Controllers
             _context = context;
         }
 
-        [HttpGet]
+        [HttpGet] // Get all Data
         public async Task<ActionResult<List<SuperHero>>> Get()
         {
             return Ok(await _context.SuperHeroes.ToListAsync());
